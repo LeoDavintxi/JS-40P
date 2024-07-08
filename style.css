@@ -48,5 +48,7 @@ i{
 
     .titulo{
         font-size: 30px;
+        margin: 20px;
+        text-align: center;
     }
 }
