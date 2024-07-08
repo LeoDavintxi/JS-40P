@@ -4,10 +4,10 @@ document.getElementById('nav-toggle').addEventListener('click', function(){
     if(i.classList.contains('fa-xmark')){
         i.classList.add('fa-bars');
         i.classList.remove('fa-xmark');
-        i.style.color = 'black';
+        i.style.color = '#DA4A2B';
     }else{
         i.classList.add('fa-xmark');
         i.classList.remove('fa-bars');
-        i.style.color = 'red';
+        i.style.color = '#DA4A2B';
     }
 });
