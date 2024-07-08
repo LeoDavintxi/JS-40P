@@ -24,11 +24,12 @@
 }
 
 aside{
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-    width: 500px;
+    width: 450px;
     background: rgb(196, 196, 196);
 }
 
@@ -125,8 +126,13 @@ nav{
     color: rgb(14, 139, 189);
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 700px){
     aside{
         width: 100vw;
+        z-index: 99;
+    }
+
+    .toggle{
+        z-index: 1;
     }
 }
