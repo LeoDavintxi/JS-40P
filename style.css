@@ -31,7 +31,7 @@ button{
     border: 2px solid  rgb(75, 176, 194);
 }
 
-h1{
+.titulo{
     font-size: 60px;
     margin: 20px;
     text-align: center;
@@ -44,5 +44,9 @@ i{
 @media screen and (max-width: 700px) {
     .contenedor{
         flex-direction: column;
+    }
+
+    .titulo{
+        font-size: 30px;
     }
 }
