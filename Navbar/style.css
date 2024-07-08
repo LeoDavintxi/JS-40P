@@ -5,7 +5,7 @@
 }
 
 nav{
-    height: 80px;
+    height:80px;
     width: 100vw;
 }
 
@@ -22,36 +22,37 @@ img{
     box-shadow: 12px 18px 12px 6px rgba(0,0,0,0.1);
 }
 
-.header-nav{
+
+.contenedor-links{
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 100%;
+    width: 100%;
+    
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    width: 25%;
 }
 
 .nav-toggle{
-    border: none;
-    background: none;
-    color: black;
-    height: 100%;
-    width: 50px;
-    font-size: 30px;
+    display: none;
 }
 
-.links, a{
+.links{
     display: flex;
     list-style: none;
+}
+
+a{
+    margin-left: 20px;
     text-decoration: none;
     color: black;
-    margin-left: 20px;
-}
-
-.nav-toggle-hide{
-    display: none;
-}
-
-.social-medias-hide{
-    display: none;
 }
 
 .social-medias{
@@ -63,7 +64,7 @@ img{
     font-size: 20px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     .social-medias{
         display: none;
     }
@@ -74,6 +75,65 @@ img{
         list-style: none;
         text-decoration: none;
         color: black;
-        margin-left: 20px;
+    }
+    
+    .contenedor-links{
+        align-items: start;
+        justify-content: left;
+        overflow: hidden;
+        max-height: 200px;
+        transition: max-height 0.5s linear;
+    }
+
+    .nav-toggle{
+        display: contents;
+        border: none;
+        background: none;
+        color: black;
+        height: 100%;
+        width: 50px;
+        font-size: 30px;
+    }
+    
+    i{
+        margin-right: 20px;
+        transition: transform 0.5s ease-out;
+    }
+
+    .contenedor-nav{
+        flex-direction: column;
+        justify-content: left;
+        align-items: start;
+        box-shadow: 12px 18px 12px 6px rgba(0,0,0,0.1);
+    }
+
+    .header-nav{
+        width: 100vw;
+        justify-content: space-between;
+    }
+    
+    li{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: 100vw;
+        height: 30px;
+        border: 1px solid rgb(199, 196, 196);
+    }
+
+    nav{
+        height: auto;
+    }
+
+    .contenedor-links-hide{
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
+    }
+
+    .nav-toggle i:hover {
+        transform: rotate(90deg);
+        transition: transform 0.5s ease-out;
+
     }
 }
