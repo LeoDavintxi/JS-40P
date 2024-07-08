@@ -93,7 +93,6 @@ a{
         height: 100%;
         width: 50px;
         font-size: 30px;
-        color: rgb(218, 104, 38);
     }
     
     i{
@@ -133,7 +132,7 @@ a{
     }
 
     .nav-toggle i:hover {
-        transform: rotate(90deg);
+        transform: rotate(180deg);
         transition: transform 0.5s ease-out;
     }
 }
