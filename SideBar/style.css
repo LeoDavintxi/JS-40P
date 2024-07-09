@@ -5,9 +5,6 @@
     font-family: monospace;
 }
 
-main{
-    position: relative;
-}
 
 .toggle{
     position: absolute;
@@ -29,6 +26,7 @@ main{
 }
 
 aside{
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -141,7 +139,6 @@ nav{
         position: fixed;
         z-index: 2;
         width: 100vw;
-        height: 100vh;
     }
 
     .toggle{
