@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background:#f1f5f8;
+}
+
+.titulo{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-family: "Great Vibes", cursive;
+    color: #c59d5f;
+    letter-spacing: 5px;
+}
+
+hr{
+    margin: 0px 10px 10px 10px;
+}
+
+p{
+    margin: 10px;
+}
+
+.cards{
+    width: 50%;
+    color: rgb(156, 144, 144);
+}
+
+.cards .tarjeta{
+    position: relative;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    padding: 10px;
+    box-shadow: 5px 5px 10px 5px rgba(77,77,77,0.25);
+}
+
+.cards h3{
+    position: relative;
+    padding: 15px;
+}
+
+.cards button{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: 3px solid #c59d5f;
+    width: 25px;
+    height: 25px;
+}
+
+.cards button i{
+    color: #c59d5f;
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cards button i:hover{
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.respuesta-hide{
+    visibility: hidden;
+    max-height: 0;
+}
+
+.respuesta{
+    visibility: visible;
+    max-height: 100%;
+}

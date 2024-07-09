@@ -67,6 +67,7 @@ main{
 }
 
 .modal .ventana{
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,7 +75,6 @@ main{
     width: 30%;
     height: 30%;
     background: white;
-    position: relative;
 }
 
 .modal .ventana button{
