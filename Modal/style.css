@@ -103,4 +103,12 @@ main{
         font-size: 20px;
         color: white;
     }
+
+    .contenedor{
+        width: 80%;
+    }
+
+    .modal .ventana{
+        width: 80%;
+    }
 }
