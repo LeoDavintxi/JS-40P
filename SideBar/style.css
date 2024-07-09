@@ -136,7 +136,7 @@ nav{
         position: fixed;
         z-index: 2;
         width: 100vw;
-        height: 99%;
+        height: 100%;
     }
 
     .toggle{
