@@ -5,6 +5,10 @@
     font-family: monospace;
 }
 
+main{
+    height: 100vh;
+}
+
 
 .toggle{
     position: absolute;
@@ -29,7 +33,7 @@ aside{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    height: 100%;
     width: 450px;
     background: rgb(196, 196, 196);
 }
@@ -132,7 +136,7 @@ nav{
         position: fixed;
         z-index: 2;
         width: 100vw;
-        height: 99vh;
+        height: 99%;
     }
 
     .toggle{
