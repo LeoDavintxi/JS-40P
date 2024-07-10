@@ -93,6 +93,10 @@ section article hr{
     padding: 10px 0 10px 0;
 }
 
+.data-contenedor p{
+    text-align: justify;
+}
+
 .data-contenedor{
     height: 100%;
     margin: 10px;
