@@ -105,7 +105,6 @@ section article hr{
     }
 
     section article img{
-        /* height: 150px; */
         width: 250px;
         object-fit: cover;
     }
@@ -121,5 +120,10 @@ section article hr{
         width: 100%;
         height: auto;
     }
+}
 
+@media screen and (max-width: 600px) {
+    section{
+        width: 90%;
+    }
 }
