@@ -6,6 +6,13 @@
     font-family: "Open Sans", sans-serif;
 }
 
+body{
+    background: url('/Menu/asset/aaabstract.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 main{
     display: flex;
     justify-content: center;
