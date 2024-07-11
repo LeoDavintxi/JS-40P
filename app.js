@@ -86,7 +86,6 @@ function displayBtn(lista){
     document.getElementById('contenedor').innerHTML = listaBotones;
 }
 
-
 //Inicio DOM
 window.addEventListener('DOMContentLoaded', ()=>{
     displayBtn(listaAPP);

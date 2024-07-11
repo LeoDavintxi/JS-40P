@@ -19,6 +19,7 @@ section{
     align-items: center;
     flex-wrap: wrap;
     height: auto;
+    width: 60%;
 }
 
 button{
