@@ -15,7 +15,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     width: 100vw;
     height: 100vh;
 }
@@ -34,6 +33,22 @@ h1{
     position: absolute;
     color: white;
     z-index: 3;
+}
+
+.random{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border: none;
+    bottom: 20px;
+    border-radius: 20px;
+    z-index: 5;
+    font-size: 20px;
+    background: white;
+    color: rgb(27, 119, 161);
+    width: 40px;
+    height: 40px;
 }
 
 .boton{
