@@ -71,6 +71,14 @@ let listaAPP=[
         icon: 'fa-solid fa-utensils',
         nameSpan: 'Menu'
     },
+    {
+        id: 10,
+        ref: '/VideoProject/index.html',
+        nameID: 'video',
+        nameClass: 'video',
+        icon: 'fa-solid fa-video',
+        nameSpan: 'Video'
+    },
 ];
 
 //Funcion crea los botones
