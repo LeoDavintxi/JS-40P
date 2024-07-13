@@ -33,14 +33,6 @@ let listaAPP=[
     },
     {
         id: 5,
-        ref: '/Quotes/index.html',
-        nameID: 'quotes',
-        nameClass: 'quotes',
-        icon: 'fa-solid fa-magnifying-glass',
-        nameSpan: 'Reviews'
-    },
-    {
-        id: 6,
         ref: '/SideBar/index.html',
         nameID: 'sidebar',
         nameClass: 'sidebar',
@@ -48,7 +40,7 @@ let listaAPP=[
         nameSpan: 'SideBar'
     },
     {
-        id: 7,
+        id: 6,
         ref: '/Modal/index.html',
         nameID: 'modal',
         nameClass: 'modal',
@@ -56,7 +48,7 @@ let listaAPP=[
         nameSpan: 'Modal'
     },
     {
-        id: 8,
+        id: 7,
         ref: '/Questions/index.html',
         nameID: 'questions',
         nameClass: 'questions',
@@ -64,7 +56,7 @@ let listaAPP=[
         nameSpan: 'Questions'
     },
     {
-        id: 9,
+        id: 8,
         ref: '/Menu/index.html',
         nameID: 'menu',
         nameClass: 'menu',
@@ -72,12 +64,20 @@ let listaAPP=[
         nameSpan: 'Menu'
     },
     {
-        id: 10,
+        id: 9,
         ref: '/VideoProject/index.html',
         nameID: 'video',
         nameClass: 'video',
         icon: 'fa-solid fa-video',
         nameSpan: 'Video'
+    },
+    {
+        id: 10,
+        ref: '/Scroll/index.html',
+        nameID: 'scroll',
+        nameClass: 'scroll',
+        icon: 'fa-solid fa-scroll',
+        nameSpan: 'Scroll'
     },
 ];
 
