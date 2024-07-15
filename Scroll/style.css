@@ -164,7 +164,13 @@ main h1{
 @media screen and (max-width: 900px){
     .header{
         flex-direction: column;
-        position: absolute;
+        position: static;
+        height: auto;
+    }
+
+    .header-scroll{
+        flex-direction: column;
+        position: fixed;
         height: auto;
     }
 
@@ -186,28 +192,33 @@ main h1{
         color: var(--primary-color);
     }
 
-    .contenedor-logo .logo{
+    .contenedor-logo .logo, .header-scroll .logo{
         margin: 30px;
         content: url('/Scroll/asset/logo-green.svg');
     }
 
-    .header .menu ul{
+    .header .menu ul, .header-scroll .menu ul{
         flex-direction: column;
         color: var(--primary-color);  
     }
 
-    .header .menu ul li a{
+    .header .menu ul li a, .header-scroll .menu ul li a{
         width: 100%;
         flex-direction: column;
         color: var(--primary-color);
     }
 
     .menu{
-        display: block; 
+        display: block;
+        overflow: hidden;
+        max-height: 0; 
+        transition: all 0.5s ease-in-out;
+
     }
 
     .menu-toggle{
-        display: none; 
+        max-height: 300px; 
+        transition: all 0.5s ease-in-out;
     }
 
     main h1{
