@@ -85,8 +85,12 @@ main h1{
     align-items: center;
     height: 200px;
     background:var(--primary-color);
+}
+
+.footer p{
     color: var(--seconday-color);
     font-size: 15px;
+    text-align: center;
 }
 
 .contenedor-logo{
