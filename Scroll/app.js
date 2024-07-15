@@ -23,3 +23,7 @@ document.getElementById('explorar').addEventListener('click', ()=>{
         behavior: 'smooth',
     });
 });
+
+document.getElementById('toggle').addEventListener('click', ()=>{
+    document.getElementById('menu').classList.toggle('menu-toggle');
+});

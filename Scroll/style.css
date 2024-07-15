@@ -44,7 +44,6 @@ main{
     align-items: center;
     flex-direction: column;
     background: linear-gradient(rgba(32, 176, 201, 0.5), rgba(0, 0, 0, 0.7)), url('/Scroll/asset/fondo2.jpg') center/cover no-repeat;
-    
 }
 
 main h1{
@@ -98,6 +97,10 @@ main h1{
     width: 30%;
 }
 
+.contenedor-logo button{
+   display: none;
+}
+
 .menu{
     display: flex;
     justify-content: end;
@@ -121,6 +124,12 @@ main h1{
     text-decoration: none;
 }
 
+.header .logo{
+    height: 50%;
+    width: auto;
+    transition: all 0.5s ease-in-out;
+}
+
 .header-scroll .menu ul li a{
     margin-left: 30px;
     color: var(--primary-color);
@@ -129,11 +138,6 @@ main h1{
     text-decoration: none;
 }
 
-.header .logo{
-    height: 50%;
-    width: auto;
-    transition: all 0.5s ease-in-out;
-}
 
 .header-scroll .logo{
     height: 50%;
@@ -155,4 +159,60 @@ main h1{
 
 .section span{
     color: var(--primary-color);
+}
+
+@media screen and (max-width: 900px){
+    .header{
+        flex-direction: column;
+        position: relative;
+        height: auto;
+    }
+
+    .contenedor-logo{
+        width: 100vw;
+        justify-content: space-between;
+    }
+
+    .contenedor-logo button{
+        display: flex;
+        margin-right:30px;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .contenedor-logo button i{
+        font-size: 30px;
+        color: var(--primary-color);
+    }
+
+    .contenedor-logo .logo{
+        margin: 30px;
+        content: url('/Scroll/asset/logo-green.svg');
+    }
+
+    .header .menu ul{
+        width: 100%;
+        flex-direction: column;
+        color: var(--primary-color);  
+    }
+
+    .header .menu ul li a{
+        width: 100%;
+        flex-direction: column;
+        color: var(--primary-color);
+    }
+
+    .menu{
+        width: 100%; 
+        display: block; 
+    }
+
+    .menu-toggle{
+        display: none; 
+    }
+
+    main h1{
+        font-size: 40px;
+    }
 }
