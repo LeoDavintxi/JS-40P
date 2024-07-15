@@ -211,17 +211,24 @@ main h1{
     .menu{
         display: block;
         overflow: hidden;
+        height: 0;
         max-height: 0; 
         transition: all 0.5s ease-in-out;
 
     }
 
     .menu-toggle{
+        height: max-content;
         max-height: 300px; 
         transition: all 0.5s ease-in-out;
     }
 
     main h1{
         font-size: 40px;
+        text-align: center;
+    }
+
+    .hero button{
+        width: 80%;
     }
 }

@@ -6,9 +6,10 @@ window.addEventListener('scroll', ()=>{
     }
 })
 
-let headerHeight = document.getElementById('header').scrollHeight;
 document.querySelectorAll('.links').forEach((item)=>{
     item.addEventListener('click', ()=>{
+        document.getElementById('menu').className = 'menu';
+        let headerHeight = document.getElementById('header').scrollHeight;
         let sectionHeight = document.getElementById('section-' + item.getAttribute('id')).offsetTop - headerHeight;
         window.scrollTo({
             top: sectionHeight,
@@ -18,6 +19,7 @@ document.querySelectorAll('.links').forEach((item)=>{
 });
 
 document.getElementById('explorar').addEventListener('click', ()=>{
+    let headerHeight = document.getElementById('header').scrollHeight;
     window.scrollTo({
         top: document.getElementById('section-tours').offsetTop - headerHeight,
         behavior: 'smooth',
