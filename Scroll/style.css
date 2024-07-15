@@ -120,8 +120,13 @@ main h1{
     font-size: 20px;
 }
 
+.menu ul li{
+    margin: 0;
+    padding: 0;
+}
+
 .header .menu ul li a{
-    margin-left: 30px;
+    padding-left: 30px;
     color: var(--seconday-color);
     font-weight: bold;
     cursor: pointer;
@@ -135,7 +140,7 @@ main h1{
 }
 
 .header-scroll .menu ul li a{
-    margin-left: 30px;
+    padding-left: 30px;
     color: var(--primary-color);
     font-weight: bold;
     cursor: pointer;
@@ -194,6 +199,7 @@ main h1{
     .contenedor-logo button i{
         font-size: 30px;
         color: var(--primary-color);
+        transition: all 0.3s ease-in-out;
     }
 
     .contenedor-logo .logo, .header-scroll .logo{
@@ -203,12 +209,12 @@ main h1{
 
     .header .menu ul, .header-scroll .menu ul{
         flex-direction: column;
-        color: var(--primary-color);  
+        color: var(--primary-color);
+        width: 100%;
     }
 
     .header .menu ul li a, .header-scroll .menu ul li a{
-        width: 100%;
-        flex-direction: column;
+        display: block;
         color: var(--primary-color);
     }
 
@@ -218,7 +224,8 @@ main h1{
         height: 0;
         max-height: 0; 
         transition: all 0.5s ease-in-out;
-
+        width: 100vw;
+        padding: 0px;
     }
 
     .menu-toggle{
@@ -233,6 +240,23 @@ main h1{
     }
 
     .hero button{
-        width: 80%;
+        width: 60%;
     }
+
+    .header .menu ul li a:hover, .header-scroll .menu ul li a:hover{
+        background: var(--primary-color);    
+        color: var(--seconday-color);
+    }
+
+    .header .contenedor-logo i:hover, .header-scroll .contenedor-logo i:hover{
+        color: aqua;
+        transition: all 0.3s ease-in-out;
+        transform: rotate(180deg);
+    }
+
+    .icon{
+        color: var(--primary-color);
+    }
+
+
 }

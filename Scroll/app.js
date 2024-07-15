@@ -28,4 +28,5 @@ document.getElementById('explorar').addEventListener('click', ()=>{
 
 document.getElementById('toggle').addEventListener('click', ()=>{
     document.getElementById('menu').classList.toggle('menu-toggle');
+    document.getElementById('icon').classList.toggle('fa-xmark');
 });
