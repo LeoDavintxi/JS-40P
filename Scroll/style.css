@@ -164,7 +164,7 @@ main h1{
 @media screen and (max-width: 900px){
     .header{
         flex-direction: column;
-        position: relative;
+        position: absolute;
         height: auto;
     }
 
@@ -192,7 +192,6 @@ main h1{
     }
 
     .header .menu ul{
-        width: 100%;
         flex-direction: column;
         color: var(--primary-color);  
     }
@@ -204,7 +203,6 @@ main h1{
     }
 
     .menu{
-        width: 100%; 
         display: block; 
     }
 
