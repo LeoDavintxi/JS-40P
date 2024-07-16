@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+body{
+    background: rgb(241 245 248);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+header{
+    height: 220px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    h1{
+        font-size: 50px;
+    }
+
+    p{
+        font-size: 15px;
+        color: rgb(97, 125, 152);
+    }
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+    height: 320px;
+    width: 80%;
+    
+    .imagen{
+        width: 50%;
+        height: 100%;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;   
+        border-radius: 20px;
+        object-fit: cover;
+    }
+
+    .tabs{
+        width: 50%;
+        height: 100%;
+        line-height: 20px;
+        text-align: justify;
+        background: white;
+        border-radius: 20px;
+
+        .botones{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            height: 50px;
+
+            button{
+                border: none;
+                background-color: white;
+                cursor: pointer;
+                font-size: 15px;
+            }
+
+            .btn{
+                background-color: rgb(211, 215, 224);
+            }
+
+            .btn-active{
+                background-color: white;
+            }
+        }
+
+        .card{
+            background: white;
+            height: 100%;
+            display: block;
+            margin: 30px;
+        }
+
+        .card-disable{
+            display: none;
+        }
+    }
+
+}
+
+.descripcion h4{
+    font-size: 15px;
+    padding: 10px 0px;
+}
+
+.descripcion p{
+    font-size: 15px;
+    color: rgb(97, 125, 152);
+}
+
+#btn-historia{
+    border-top-left-radius: 20px;
+}
+
+#btn-metas{
+    border-top-right-radius: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+        main{
+            flex-direction: column;
+            justify-content: start;
+            height: auto;
+            width: 80%;
+
+            .imagen{
+                width: 100%;
+                height: 400px;
+            }
+
+            .tabs{
+                width: 100%;
+                height: max-content;
+                margin-bottom: 50px;
+            }
+        }
+
+        header{
+            height: 220px;
+
+            h1{
+                font-size: 30px;
+            }
+
+            p{
+                padding: 50px;
+            }
+        }
+}
