@@ -71,11 +71,18 @@ main{
                 cursor: pointer;
                 font-size: 15px;
             }
-
+            
             .btn{
-                background-color: rgb(211, 215, 224);
+                background-color: rgb(211, 215, 224); 
+                transition: all 0.3s ease-in-out;
             }
 
+            .btn:hover{
+                background: rgb(219, 250, 255);
+                color: rgb(1, 144, 180);
+                transition: all 0.3s ease-in-out;
+            }
+            
             .btn-active{
                 background-color: white;
             }
