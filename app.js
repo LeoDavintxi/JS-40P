@@ -79,6 +79,14 @@ let listaAPP=[
         icon: 'fa-solid fa-scroll',
         nameSpan: 'Scroll'
     },
+    {
+        id: 11,
+        ref: '/Tabs/index.html',
+        nameID: 'tabs',
+        nameClass: 'tabs',
+        icon: 'fa-solid fa-table-list',
+        nameSpan: 'Scroll'
+    }
 ];
 
 //Funcion crea los botones

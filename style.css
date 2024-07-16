@@ -53,4 +53,8 @@ i{
     section{
         height: auto;
     }
+
+    .contenedor{
+        width: 80%;
+    }
 }
