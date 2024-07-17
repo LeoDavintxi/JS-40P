@@ -85,7 +85,15 @@ let listaAPP=[
         nameID: 'tabs',
         nameClass: 'tabs',
         icon: 'fa-solid fa-table-list',
-        nameSpan: 'Scroll'
+        nameSpan: 'Tabs'
+    },
+    {
+        id: 12,
+        ref: '/Timer/index.html',
+        nameID: 'timer',
+        nameClass: 'timer',
+        icon: 'fa-solid fa-stopwatch-20',
+        nameSpan: 'Timer'
     }
 ];
 
