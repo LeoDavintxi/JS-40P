@@ -94,6 +94,14 @@ let listaAPP=[
         nameClass: 'timer',
         icon: 'fa-solid fa-stopwatch-20',
         nameSpan: 'Timer'
+    },
+    {
+        id: 13,
+        ref: '/Lorem/index.html',
+        nameID: 'lorem',
+        nameClass: 'lorem',
+        icon: 'fa-brands fa-wpexplorer',
+        nameSpan: 'Lorem'
     }
 ];
 

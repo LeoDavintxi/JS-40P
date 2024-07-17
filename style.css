@@ -31,6 +31,13 @@ button{
     color: rgb(75, 176, 194);
     font-weight: bold;
     border: 2px solid  rgb(75, 176, 194);
+    cursor: pointer;
+}
+
+button:hover{
+    background: rgb(75, 176, 194);
+    border: 2px solid  white;
+    color: white;
 }
 
 .titulo{

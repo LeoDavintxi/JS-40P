@@ -64,6 +64,7 @@ body {
         color: var(--parrafo);
         margin: 30px 0px;
         letter-spacing: 1px;
+        text-align: justify;
       }
 
       .contadores {
