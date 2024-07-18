@@ -14,6 +14,14 @@ document.getElementById('boton').addEventListener('click', ()=>{
     let cantidad = document.getElementById('cantidad').value;
     document.getElementById('parrafos').innerHTML = `<p></p>`;
     for (let index = 0; index < cantidad; index++) {        
-        document.getElementById('parrafos').innerHTML += `<p>${text[index]}</p><br>`;
+        document.getElementById('parrafos').innerHTML += `<p>${ mezclar(text)[index] }</p><br>`;
     }
 });
+
+function mezclar(arreglo) {
+    for (let i = arreglo.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arreglo[i], arreglo[j]] = [arreglo[j], arreglo[i]];
+    }
+    return arreglo;
+}
