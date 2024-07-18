@@ -102,6 +102,14 @@ let listaAPP=[
         nameClass: 'lorem',
         icon: 'fa-brands fa-wpexplorer',
         nameSpan: 'Lorem'
+    },
+    {
+        id: 14,
+        ref: '/List/index.html',
+        nameID: 'list',
+        nameClass: 'list',
+        icon: 'fa-brands fa-list',
+        nameSpan: 'List'
     }
 ];
 
