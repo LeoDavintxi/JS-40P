@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+:root{
+    --fondo: rgb(241, 245, 248);
+}
+
+body{
+    background: var(--fondo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+
+
+    main{
+        background: white;
+        border-radius: 10px;
+        box-shadow: 10px 10px 32px 2px rgba(190, 189, 189, 0.9);
+        width: 40%;
+        padding: 20px;
+        
+        .titulo{
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        
+        .contenedor{
+            display: flex;
+            height: 30px;
+            
+            input{
+                width: 70%;
+                border-radius: 10px 0px 0px 10px;
+                border: none;
+                background: var(--fondo);
+                padding-left: 20px;
+            }
+
+            button{
+                width: 30%;
+                cursor: pointer;
+                border: none;
+                color: white;
+                background: rgb(22, 123, 163);
+                border-radius: 0px 10px 10px 0px;
+                transition: all 0.5s ease;
+                
+                &:hover{
+                    background: rgb(149, 223, 233);
+                    transition: all 0.5s ease;
+                }
+            }
+
+    
+        }
+        
+        .listado{
+            padding: 30px 0px 30px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            .elemento{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                transition: all 0.5s ease-out;
+                margin-bottom: 10px;
+
+                h5{
+                    display: flex;
+                    align-items: center;
+                    width: 80%;
+                    height: 30px;
+                    padding-left: 10px;
+                }
+                
+                button{
+                    width: 30px;
+                    margin-left: 10px;
+                    height: 30px;
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                    transform: rotate(0deg);
+                    transition: all 0.5s ease;
+                    
+                    &:hover{
+                        transform: rotate(360deg);
+                        transition: all 0.5s ease;
+                    }
+                }
+
+                .eliminar{
+                    color: rgb(216, 113, 113);
+
+
+                }
+
+                .editar{
+                    color: rgb(139, 211, 139);
+                }
+
+                .listo{
+                    color: rgb(83, 169, 226);
+                }
+                
+                &:hover{
+                    background: var(--fondo);
+                    transition: all 0.5s ease-out;
+                }
+            }
+
+        }
+
+        .limpiar{
+            display: flex;
+            justify-content: center;
+
+            button{
+                border: none;
+                background: none;
+                cursor: pointer;
+                color: red;
+                transition: all 0.3s ease;
+
+
+                &:hover{
+                    color: brown;
+                    transform: scale(1.5);
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+    }
+
+    
+}
