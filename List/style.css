@@ -17,7 +17,6 @@ body{
     width: 100vw;
     height: 100vh;
 
-
     main{
         background: white;
         border-radius: 10px;
@@ -26,6 +25,7 @@ body{
         padding: 20px;
         
         .titulo{
+            margin-top: 10px;
             margin-bottom: 30px;
             text-align: center;
             font-size: 30px;
@@ -42,9 +42,14 @@ body{
                 border: none;
                 background: var(--fondo);
                 padding-left: 20px;
+                outline: none;
+
+                &:focus{
+                    border: none;
+                }
             }
 
-            button{
+            .guardar{
                 width: 30%;
                 cursor: pointer;
                 border: none;
@@ -52,6 +57,7 @@ body{
                 background: rgb(22, 123, 163);
                 border-radius: 0px 10px 10px 0px;
                 transition: all 0.5s ease;
+                outline: none;
                 
                 &:hover{
                     background: rgb(149, 223, 233);
@@ -59,7 +65,64 @@ body{
                 }
             }
 
-    
+            .editar{
+                width: 30%;
+                cursor: pointer;
+                border: none;
+                color: white;
+                background:rgb(83, 172, 145);
+                border-radius: 0px 10px 10px 0px;
+                transition: all 0.5s ease;
+                outline: none;
+                
+                &:hover{
+                    background: rgb(149, 223, 233);
+                    transition: all 0.5s ease;
+                }
+            }
+
+
+        }
+
+        .mensajes{
+            text-align: center;
+            height: 30px;
+            padding: 10px;
+            border-radius: 10px;
+            
+            .mensaje-eliminado{
+                padding: 10px;
+                border-radius: 10px;
+                background: rgb(248, 228, 228);
+            }
+
+            .mensaje-agregar{
+                padding: 10px;
+                border-radius: 10px;
+                background: rgb(224, 248, 230);
+            }
+
+            .mensaje-limpiar{
+                padding: 10px;
+                border-radius: 10px;
+                background: rgb(248, 228, 228);
+            }
+
+            .mensaje-sin-items{
+                padding: 10px;
+                border-radius: 10px;
+                background: rgb(248, 228, 228);
+            }
+
+            .mensaje-completado{
+                padding: 10px;
+                border-radius: 10px;
+                background: rgb(228, 232, 248);
+            }
+
+            .mensaje-none{
+                display: none;
+            }
         }
         
         .listado{
@@ -69,6 +132,11 @@ body{
             justify-content: center;
             align-items: center;
             
+            .elemento-listo{
+                text-decoration: line-through;
+                color: rgb(226, 219, 219);
+            }
+
             .elemento{
                 width: 100%;
                 display: flex;
@@ -77,6 +145,7 @@ body{
                 border-radius: 10px;
                 transition: all 0.5s ease-out;
                 margin-bottom: 10px;
+
 
                 h5{
                     display: flex;
