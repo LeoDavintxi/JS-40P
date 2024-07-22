@@ -86,8 +86,33 @@ function preparacionEditar(e) {
 
 function tareaCompletada(e) {
     const elemento = e.currentTarget.parentElement;
+    let botonEditar = elemento.querySelector('.editar');
+    let botonEliminar = elemento.querySelector('.eliminar');
+    let iconoListo = elemento.querySelector('.listo').querySelector('i');
     elemento.classList.toggle('elemento-listo');
-    const mensaje = elemento.classList.contains('elemento-listo') ? 'Item Completo' : 'Item Habilitado';
+    
+    let mensaje= '';
+    if(elemento.classList.contains('elemento-listo') || !botonEditar.disabled){
+        mensaje = 'Item Completo';
+        botonEditar.disabled = true;
+        botonEditar.style.color = '#e2dbdb';
+        botonEliminar.disabled = true;
+        botonEliminar.style.color = '#e2dbdb';
+        iconoListo.className = 'fa-solid fa-xmark';
+        iconoListo.style.color = '#d87171';
+
+    }else{
+        mensaje = 'Item Habilitado';
+        botonEditar.disabled = false;
+        botonEditar.style.color = '#53ac91';
+        botonEliminar.disabled = false;
+        botonEliminar.style.color = '#d87171';
+        iconoListo.className = 'fa-solid fa-check';
+        iconoListo.style.color = '#53a9e2';
+    }
+
+    
+    
     mostrarMensaje(mensaje, 'completado');
 }
 

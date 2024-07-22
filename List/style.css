@@ -70,7 +70,7 @@ body{
                 cursor: pointer;
                 border: none;
                 color: white;
-                background:rgb(83, 172, 145);
+                background:#53ac91;
                 border-radius: 0px 10px 10px 0px;
                 transition: all 0.5s ease;
                 outline: none;
@@ -134,7 +134,7 @@ body{
             
             .elemento-listo{
                 text-decoration: line-through;
-                color: rgb(226, 219, 219);
+                color: #e2dbdb;
             }
 
             .elemento{
@@ -172,7 +172,7 @@ body{
                 }
 
                 .eliminar{
-                    color: rgb(216, 113, 113);
+                    color: #d87171;
 
 
                 }
@@ -182,7 +182,7 @@ body{
                 }
 
                 .listo{
-                    color: rgb(83, 169, 226);
+                    color: #53a9e2;
                 }
                 
                 &:hover{
