@@ -110,6 +110,14 @@ let listaAPP=[
         nameClass: 'list',
         icon: 'fa-solid fa-list-check',
         nameSpan: 'List'
+    },
+    {
+        id: 15,
+        ref: '/Slider/index.html',
+        nameID: 'slider',
+        nameClass: 'slider',
+        icon: 'fa-brands fa-slideshare',
+        nameSpan: 'Slider'
     }
 ];
 
