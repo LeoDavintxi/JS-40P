@@ -118,6 +118,14 @@ let listaAPP=[
         nameClass: 'slider',
         icon: 'fa-brands fa-slideshare',
         nameSpan: 'Slider'
+    },
+    {
+        id: 16,
+        ref: '/Progress/index.html',
+        nameID: 'progress',
+        nameClass: 'progress',
+        icon: 'fa-solid fa-bars-progress',
+        nameSpan: 'Progress'
     }
 ];
 
