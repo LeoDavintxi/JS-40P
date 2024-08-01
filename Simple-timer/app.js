@@ -39,7 +39,7 @@ function iniciar() {
             if (i < 0) {
                 reiniciar();
             }
-        }, 100);
+        }, 1000);
     } else {
         icono.className = 'fa-solid fa-play';
         clearInterval(conteo);
@@ -54,7 +54,7 @@ function reiniciar() {
     contador.innerHTML = `01:00`;
     round.style.background = 'white';
     contador.style.color = '#7cabf5';
-    fondo.style.background = 'green';
+    fondo.style.background = '#2bdb48';
     i = 60;
     const angle = 360 - (i / 60) * 360;
     fondoReloj.style.background = `conic-gradient(transparent 0deg ${angle}deg, white ${angle}deg 360deg)`;
