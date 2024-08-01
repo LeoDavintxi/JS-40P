@@ -126,6 +126,14 @@ let listaAPP=[
         nameClass: 'progress',
         icon: 'fa-solid fa-bars-progress',
         nameSpan: 'Progress'
+    },
+    {
+        id: 17,
+        ref: '/Simple-timer/index.html',
+        nameID: 'simpleTimer',
+        nameClass: 'simpleTimer',
+        icon: 'fa-solid fa-stopwatch-20',
+        nameSpan: 'Simple Timer'
     }
 ];
 
