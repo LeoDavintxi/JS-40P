@@ -108,7 +108,7 @@ let listaAPP=[
         ref: '/List/index.html',
         nameID: 'list',
         nameClass: 'list',
-        icon: 'fa-solid fa-stopwatch',
+        icon: 'fa-solid fa-list-check',
         nameSpan: 'List'
     },
     {
@@ -132,8 +132,8 @@ let listaAPP=[
         ref: '/Simple-timer/index.html',
         nameID: 'simpleTimer',
         nameClass: 'simpleTimer',
-        icon: 'fa-solid fa-stopwatch-20',
-        nameSpan: 'Simple Timer'
+        icon: 'fa-solid fa-stopwatch',
+        nameSpan: 'Simple'
     }
 ];
 
