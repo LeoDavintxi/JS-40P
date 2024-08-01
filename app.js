@@ -108,7 +108,7 @@ let listaAPP=[
         ref: '/List/index.html',
         nameID: 'list',
         nameClass: 'list',
-        icon: 'fa-solid fa-list-check',
+        icon: 'fa-solid fa-stopwatch',
         nameSpan: 'List'
     },
     {
