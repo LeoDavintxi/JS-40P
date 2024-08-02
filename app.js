@@ -134,7 +134,15 @@ let listaAPP=[
         nameClass: 'simpleTimer',
         icon: 'fa-solid fa-stopwatch',
         nameSpan: 'Simple'
-    }
+    },
+    {
+        id: 18,
+        ref: '/Text/index.html',
+        nameID: 'text',
+        nameClass: 'text',
+        icon: 'fa-solid fa-text-width',
+        nameSpan: 'Text Effect'
+    },
 ];
 
 //Funcion crea los botones
