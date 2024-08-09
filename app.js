@@ -143,6 +143,14 @@ let listaAPP=[
         icon: 'fa-solid fa-text-width',
         nameSpan: 'Text Effect'
     },
+    {
+        id: 19,
+        ref: '/Loading/index.html',
+        nameID: 'loading',
+        nameClass: 'loading',
+        icon: 'fa-solid fa-spinner', 
+        nameSpan: 'Loading'
+    },
 ];
 
 //Funcion crea los botones
