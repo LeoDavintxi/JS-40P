@@ -151,6 +151,14 @@ let listaAPP=[
         icon: 'fa-solid fa-spinner', 
         nameSpan: 'Loading'
     },
+    {
+        id: 20,
+        ref: '/BoardSound/index.html',
+        nameID: 'boardsound',
+        nameClass: 'boardsound',
+        icon: 'fa-solid fa-podcast', 
+        nameSpan: 'Board Sound'
+    },
 ];
 
 //Funcion crea los botones
