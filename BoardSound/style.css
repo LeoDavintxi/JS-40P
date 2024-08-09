@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background: #a164df;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    section{
+        width: 70%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 15px;
+
+        button{
+            padding: 30px 50px;
+            font-size: 20px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            background: #663399;
+            color: white;
+            transition: all 0.3s ease;
+
+            &:hover{
+                background: #734a9c;
+            }
+        }
+    }
+}
